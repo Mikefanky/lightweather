@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="cap">Погода</div>
+    <div class="wraper">
+       <input type="search" placeholder=" Название города" id="search">
+        <input type="date" id="date">
+        <div class="btn">Поиск</div>
+    </div>
+    <section class="days">
+    </section>
+    <section class="weather">
+        <section class="template">
+            <div class="name"></div>
+            <div class="time">Время:</div>
+            <div class="humidity">Влажность:</div> 
+            <div class="pressure">Давление:</div>
+            <div class="temp">Температура:</div>
+        </section>
+    </section>
+    <div class="wraperMap">
+        <div id="map"></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6uwV4JPT78mTvv2FOPxFouHnqhi-M5iU&callback=initMap"
+    async defer></script>
+</body>
+</html>
