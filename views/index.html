@@ -10,27 +10,29 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div class="cap">Погода</div>
-    <div class="wraper">
-       <input type="search" placeholder=" Название города" id="search">
-        <input type="date" id="date">
-        <div class="btn">Поиск</div>
-    </div>
-    <section class="days">
+    <section class="center">
+        <div class="wraper">
+            <div class="cap">Погода</div>
+            <input type="search" placeholder=" Название города" id="search">
+                <input type="date" id="date">
+                <div class="btn">Поиск</div>
+            </div>
+            <section class="days">
+            </section>
+            <section class="weather">
+                <section class="template">
+                    <div class="name"></div>
+                    <div class="time">Время:</div>
+                    <div class="humidity">Влажность:</div> 
+                    <div class="pressure">Давление:</div>
+                    <div class="temp">Температура:</div>
+                </section>
+            </section>
+            <div class="wraperMap">
+                <div id="map"></div>
+            </div>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6uwV4JPT78mTvv2FOPxFouHnqhi-M5iU&callback=initMap"
+            async defer></script>
     </section>
-    <section class="weather">
-        <section class="template">
-            <div class="name"></div>
-            <div class="time">Время:</div>
-            <div class="humidity">Влажность:</div> 
-            <div class="pressure">Давление:</div>
-            <div class="temp">Температура:</div>
-        </section>
-    </section>
-    <div class="wraperMap">
-        <div id="map"></div>
-    </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6uwV4JPT78mTvv2FOPxFouHnqhi-M5iU&callback=initMap"
-    async defer></script>
 </body>
 </html>

@@ -1,24 +1,21 @@
 body {
-
   background: url("../img/weather.jpg") no-repeat;
   background-size: cover;
   margin: 0px;
-  font-family: Arimo, Helvetica, Arial, sans-serif; 
-}
+  font-family: Arimo, Helvetica, Arial, sans-serif; }
+
+.center {
+  max-width: 1200px;
+  margin: auto; }
 
 .cap {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  margin-left: 600px;
-  width: 13%;
-  align-items: center; }
+  text-align: center; }
 
 .wraper {
   display: flex;
   flex-direction: column;
-  margin-left: 600px;
-  width: 13%; }
+  width: 200px;
+  margin: auto; }
   .wraper input {
     background: #ffffff;
     color: black;
@@ -40,9 +37,9 @@ body {
     background: #a5dafa; }
 
 .days {
-  display: flex;
-  margin-left: 15px;
-  margin-top: 25px; }
+  max-width: 425px;
+  margin: auto;
+  display: flex; }
 
 .day {
   width: 34px;
@@ -59,26 +56,39 @@ body {
     background: #a5dafa; }
 
 .weather {
-  width: 98%;
+  max-width: 600px;
+  margin: auto;
   display: flex;
-  margin-left: 15px;
   margin-top: 15px;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .template {
   display: none; }
 
 .item {
-  width: 250px; }
+  flex: 0 130px;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.5);
+  width: 250px;
+  margin-left: 13px;
+  margin-top: 5px; }
 
 .wraperMap {
-  margin-left: 395px;
-  width: 600px;
+  max-width: 600px;
+  margin: auto;
   height: 500px;
   margin-top: 20px; }
   .wraperMap #map {
-    width: 600px;
+    max-width: 600px;
     height: 500px; }
+
+@media screen and (orientation: portrait) {
+  .weather {
+    flex-direction: column; }
+  .item {
+    margin-left: 0px;
+    width: 100%; } }
 
 .icons {
   width: 55px;
